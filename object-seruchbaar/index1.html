@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .about-section,
+        .team-section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            width: 100%;
+            bottom: -230px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section"
+            style="background-image: url(https://i.pinimg.com/564x/80/2e/9f/802e9ffdcf56072462deeeee8460827f.jpg);">
+            <h2>Our Story</h2>
+            <p>Tasty Haven: A Culinary Delight
+                <br>
+                Welcome to Tasty Haven, where every meal is a journey to savor! Nestled in the heart of the city, our
+                restaurant offers a warm and inviting atmosphere perfect for intimate dinners, family gatherings, and
+                celebrations of all kinds.
+
+                At Tasty Haven, we pride ourselves on delivering a diverse menu that showcases the best of international
+                cuisine, prepared with the freshest ingredients and a touch of culinary artistry. Whether you're craving
+                a classic dish or an innovative new creation, our talented chefs are dedicated to crafting flavors that
+                will delight your palate and leave you coming back for more.
+
+                Our menu features an array of mouthwatering appetizers, succulent mains, and decadent desserts. From the
+                first bite to the last, every dish is designed to be a feast for the senses. Pair your meal with a
+                selection from our carefully curated wine list or a handcrafted cocktail from our bar to elevate your
+                dining experience.
+
+                At Tasty Haven, exceptional service is our hallmark. Our friendly and attentive staff are here to ensure
+                your visit is nothing short of extraordinary. We invite you to relax, indulge, and enjoy the culinary
+                excellence that defines Tasty Haven.
+
+                Come and experience the magic of Tasty Haven – where every meal is a celebration of good taste and great
+                company.
+            </p>
+        </section>
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-member" onclick="showDetails('member1')">
+                <img src="https://i.pinimg.com/564x/0b/78/c8/0b78c8cd61a5b78a5984bba9412b72b3.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member" onclick="showDetails('member2')">
+                <img src="https://i.pinimg.com/564x/61/0b/59/610b59c373db8f923075583d4088a9c4.jpg" alt="Team Member 2">
+                <h3>laiba</h3>
+                <p>junior assistant</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Company</p>
+    </footer>
+
+    <script>
+        function showDetails(memberId) {
+            alert(`Showing details for ${memberId}`);
+            // Add more functionality here to display detailed info
+        }
+    </script>
+</body>
+
+</html>
